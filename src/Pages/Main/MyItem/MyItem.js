@@ -17,7 +17,7 @@ const MyItem = () => {
   useEffect(() => {
     const email = user.email;
     const getItems = async () => {
-      const url = `http://localhost:5000/inventory?email=${email}`;
+      const url = `https://assignment-11-car-store-server.vercel.app/inventory?email=${email}`;
       const { data } = await axios.get(url);
       setItems(data);
       console.log(data)
@@ -34,7 +34,7 @@ const MyItem = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `http://localhost:5000/inventory/${id}`;
+      const url = `https://assignment-11-car-store-server.vercel.app/inventory/${id}`;
       fetch(url, {
         method: "DELETE",
       })

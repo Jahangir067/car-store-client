@@ -9,7 +9,7 @@ const Details = () => {
     const [allToys, setallToys] = useState([])
     console.log(allToys)
     useEffect( () => {
-        fetch(`http://localhost:5000/inventory/`+id).then(res => {
+        fetch(`https://assignment-11-car-store-server.vercel.app/inventory/`+id).then(res => {
         return res.json();
       }).then((resp) => {
         console.log(resp);

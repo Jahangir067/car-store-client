@@ -11,7 +11,7 @@ const AddItem = () => {
   const onSubmit = (data) => {
     console.log(data)
     // add item to DB
-    fetch(`http://localhost:5000/inventory`, {
+    fetch(`https://assignment-11-car-store-server.vercel.app/inventory`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

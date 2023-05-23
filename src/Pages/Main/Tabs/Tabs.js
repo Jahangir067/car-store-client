@@ -8,7 +8,7 @@ const Tabs = () => {
     const [activeTab, setActiveTab] = useState("racing");
 
     useEffect( () => {
-        fetch("http://localhost:5000/inventory")
+        fetch("https://assignment-11-car-store-server.vercel.app/inventory")
         .then(res => res.json())
         .then(inventoris => {
             setTabs(inventoris)

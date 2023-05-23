@@ -5,7 +5,7 @@ const Update = () => {
     const {id} = useParams();
     const [items, setItems] = useState([]);
     useEffect( () => {
-        fetch(`http://localhost:5000/inventory/`+id).then(res => {
+        fetch(`https://assignment-11-car-store-server.vercel.app/inventory/`+id).then(res => {
         return res.json();
       }).then((resp) => {
         console.log(resp);
@@ -24,7 +24,7 @@ const Update = () => {
         console.log(price, quantity, description)
         const updatedData = {price, quantity, description}
 
-        fetch(`http://localhost:5000/inventory/${items.id}`, {
+        fetch(`https://assignment-11-car-store-server.vercel.app/inventory/${items.id}`, {
             method: 'PUT',
             headers: {
                 'content-type:': 'application/json'

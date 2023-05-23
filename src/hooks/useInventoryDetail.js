@@ -6,7 +6,7 @@ const useInventoryDetail = (id) => {
   // Load data based on id
   useEffect(() => {
     const getItems = async () => {
-      const url = `http://localhost:5000/inventory/${id}`;
+      const url = `https://assignment-11-car-store-server.vercel.app/inventory/${id}`;
       const { data } = await axios.get(url);
       setInventory(data);
     };
