@@ -21,23 +21,21 @@ const Details = () => {
     return (
         <div> 
           { allToys &&
-             <Card className='ms-5 ps-5'  style={{ width: '18rem' }}>
-             <Card.Img variant="top" src={allToys?.img} />
-             <Card.Body>
-               <Card.Title>Name: {allToys?.name}</Card.Title>
-               
-             </Card.Body>
-             <ListGroup className="list-group-flush">
-               <ListGroup.Item>Price: {allToys?.price}</ListGroup.Item>
-               <ListGroup.Item>Quantity: {allToys?.quantity}</ListGroup.Item>
-               <ListGroup.Item>Category: {allToys?.category}</ListGroup.Item>
-               <ListGroup.Item>Supplier: {allToys?.supplier}</ListGroup.Item>
-               <ListGroup.Item>Rating: {allToys?.rating}</ListGroup.Item>
-             </ListGroup>
-             <Card.Text>
-             Description: {allToys?.description}
-               </Card.Text>
-           </Card>
+             <div className='container d-flex justify-content-evenly align-items-center mt-5'  style={{ width: '18rem' }}>
+             <div><img className='w-70' src={allToys?.img} alt="" /></div>
+             
+             <div className="ms-5 ps-5">
+               <h5>Name:{allToys?.name}</h5>
+               <p>Price:{allToys?.price}</p>
+               <p>Quantity:{allToys?.quantity}</p>
+               <p>Category:{allToys?.category}</p>
+               <p>Supplier:{allToys?.supplier}</p>
+               <p>Rating:{allToys?.rating}</p>
+               <p>Description:{allToys?.description}</p>
+               <button className='btn btn-primary'>Buy Now</button>
+             </div>
+             
+           </div>
           }
 
         </div>

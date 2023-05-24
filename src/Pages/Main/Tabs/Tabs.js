@@ -22,7 +22,7 @@ const Tabs = () => {
     };
     return (
         <div>
-        <h1 className="title text-center mt-5 p-5">Available Job's</h1>
+        <h1 className="title text-center mt-5 p-5">Best Selling Products</h1>
         <div className="tab-container text-center">
           <div className="text-center w-100 m-auto">
             <div className="tabs d-flex justify-content-center align-items-center">

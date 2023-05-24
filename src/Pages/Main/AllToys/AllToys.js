@@ -53,13 +53,15 @@ const AllToys = () => {
                         {
                           allToys.map((allToy, index) => (
                             
-                            <tr key={allToy._id}>
+                            <tr 
+                            key={allToy._id}>
+
                             <td>{allToy.supplier}</td>
                             <td>{allToy.name}</td>
                             <td>{allToy.category}</td>
                             <td>{allToy.price}</td>
                             <td>{allToy.quantity}</td>
-                            <td>{allToy._id}</td>
+                            
                             <td> 
                               <Link to={`/details/${allToy._id}`}>
 

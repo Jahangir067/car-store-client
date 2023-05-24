@@ -51,14 +51,14 @@ const Header = () => {
             )}
             {user ? (
               <Nav.Link as={Link} to="/add">
-                Add Item
+                Add a Toys
               </Nav.Link>
             ) : (
               <></>
             )}
             {user ? (
               <Nav.Link as={Link} to="/myitem">
-                My Items
+                My Toys
               </Nav.Link>
             ) : (
               <></>
