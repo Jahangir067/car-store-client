@@ -7,7 +7,7 @@ import Loading from "../../Shared/Loading/Loading";
 const Inventory = () => {
   // data from hook
   const [inventoris, setInventoris] = useInventory();
-  // Delete Item from DB
+  // Delete Item from the DB
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
