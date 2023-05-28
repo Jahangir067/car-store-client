@@ -15,7 +15,7 @@ const InventoryDetails = () => {
   //  delivery button
   const handleDeliverd = () => {
     const quantity = inventory.quantity - 1;
-    //  send data to server
+    //  send data to the server
     const url = `https://assignment-11-car-store-server.vercel.app/inventory/${id}`;
     fetch(url, {
       method: "PUT",
