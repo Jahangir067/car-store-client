@@ -35,7 +35,7 @@ const Inventory = () => {
         </h2>
         <div>
           <Link to={`/add`}>
-            {/* Add new item page button */}
+            {/* Add new toys page button */}
             <Button className="my-3" variant="outline-themeButton">
               Add new item
             </Button>{" "}
