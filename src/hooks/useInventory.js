@@ -3,7 +3,7 @@ import axios from "axios";
 
 const useInventory = () => {
   const [inventoris, setInventoris] = useState([]);
-  // Load all data
+  // Load Alldata
   useEffect(() => {
     const getItems = async () => {
       const url = `https://assignment-11-car-store-server.vercel.app/inventory`;
