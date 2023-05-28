@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import useInventoryDetail from "../../../hooks/useInventoryDetail";
 
 const InventoryDetails = () => {
-  // Get id from parameter
+  // Get id from the parameter
   const { id } = useParams();
   // Get data from hook
   const [inventory] = useInventoryDetail(id);
