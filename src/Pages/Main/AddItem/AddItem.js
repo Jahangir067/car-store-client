@@ -85,7 +85,7 @@ const AddItem = () => {
           {...register("supplier", { required: true })}
         />
 
-       {/* Sub-Category input field */}
+       {/* Sub-Category input field setup */}
        <select className="text-input mb-2" {...register("category")}>
            <option value="racing-car">Racing Car</option>
            <option value="remote-control">Remote Control</option>
