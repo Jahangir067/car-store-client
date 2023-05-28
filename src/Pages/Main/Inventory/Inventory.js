@@ -46,7 +46,7 @@ const Inventory = () => {
         <Loading />
       ) : (
         <Row xs={1} md={2} lg={3} className="g-4">
-          {/* Loop on get data item */}
+          {/* Loop on the get data item */}
           {inventoris.map((inventory) => (
             <Col key={inventory._id}>
               <Card>
