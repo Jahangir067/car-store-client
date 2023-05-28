@@ -9,7 +9,7 @@ const InventoryDetails = () => {
   const { id } = useParams();
   // Get data from hook
   const [inventory] = useInventoryDetail(id);
-  // De-structuring
+  // De--structuring
   const { _id, name, img, price, quantity, supplier, description } = inventory;
    console.log(inventory)
   // Handle delivery button
