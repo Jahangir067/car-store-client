@@ -103,7 +103,7 @@ const InventoryDetails = () => {
             </Card.Body>
           </Card>
         </Col>
-        {/* Restock item form */}
+        {/* Restock and item form */}
         <Col md={6} className="my-5">
           <h2>Restock the item</h2>
           <form onSubmit={handleRestock}>
