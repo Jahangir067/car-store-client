@@ -5,7 +5,7 @@ import useInventory from "../../../hooks/useInventory";
 import Loading from "../../Shared/Loading/Loading";
 
 const Inventory = () => {
-  // Get data from hook
+  // data from hook
   const [inventoris, setInventoris] = useInventory();
   // Delete Item from DB
   const handleDelete = (id) => {
