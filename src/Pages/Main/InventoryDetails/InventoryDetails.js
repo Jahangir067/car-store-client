@@ -33,7 +33,7 @@ const InventoryDetails = () => {
       });
   };
 
-  // Handle restock button
+  // Handle button
   const handleRestock = (event) => {
     event.preventDefault();
     const quantity =
