@@ -12,7 +12,7 @@ const InventoryDetails = () => {
   // De--structuring
   const { _id, name, img, price, quantity, supplier, description } = inventory;
    console.log(inventory)
-  // Handle delivery button
+  //  delivery button
   const handleDeliverd = () => {
     const quantity = inventory.quantity - 1;
     //  send data to server
