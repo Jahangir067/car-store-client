@@ -120,7 +120,7 @@ const InventoryDetails = () => {
               className="btn btn-outline-themeButton mt-2"
             />
           </form>
-          {/* Manage Inventory page button */}
+          {/* Manage  page button */}
           <Link to={`/manage`}>
             <Button className="my-3" variant="outline-themeButton">
               Manage Inventories
