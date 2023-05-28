@@ -82,7 +82,7 @@ const InventoryDetails = () => {
               </p>
               <p className="d-flex justify-content-between">
                 <b>
-                  SKU_ID: <span className="theme_color">{_id} </span>
+                   <span className="theme_color">{_id} </span>
                 </b>
                 <br />
                 <b>
