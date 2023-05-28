@@ -7,7 +7,7 @@ const SingleInventroy = ({ inventory }) => {
   console.log(inventory)
   // De-structuring
   const { _id, name, img, price, quantity, supplier, description } = inventory;
-  // Navigate to item detalis page
+  // Navigate to item view detalis page
   const navigate = useNavigate();
   const navigateToInventoryDetail = (id) => {
     navigate(`/inventory/${id}`);
