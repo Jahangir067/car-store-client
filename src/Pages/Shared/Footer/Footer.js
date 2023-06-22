@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  // Generate dynamic date
+  // Generate dynamic date & year
   const date = new Date().getFullYear();
   return (
     <Container>
